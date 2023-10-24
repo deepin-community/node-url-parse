@@ -1,5 +1,160 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-url-parse (1.5.10+~1.4.8-3) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.2
+  * Fix clean (Closes: #1045676)
+
+ -- Yadd <yadd@debian.org>  Mon, 14 Aug 2023 08:38:26 +0400
+
+node-url-parse (1.5.10+~1.4.8-2) unstable; urgency=medium
+
+  * Team upload
+  * Update options for webpack 5.0 (Closes: #1002867)
+  * Bump Standards-Version to 4.6.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 25 May 2022 23:10:45 +0530
+
+node-url-parse (1.5.10+~1.4.8-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.5.10+~1.4.8
+
+ -- Yadd <yadd@debian.org>  Fri, 25 Feb 2022 16:15:00 +0100
+
+node-url-parse (1.5.9+~1.4.8-1) unstable; urgency=medium
+
+  * Team upload
+  * Use uscan group
+  * New upstream version 1.5.9+~1.4.8
+
+ -- Yadd <yadd@debian.org>  Mon, 21 Feb 2022 11:19:45 +0100
+
+node-url-parse (1.5.7-1) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * New upstream version 1.5.7
+
+ -- Yadd <yadd@debian.org>  Thu, 17 Feb 2022 13:34:28 +0100
+
+node-url-parse (1.5.3-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * New upstream version 1.5.3 (Closes: #991577)
+
+ -- Yadd <yadd@debian.org>  Sat, 31 Jul 2021 13:13:02 +0200
+
+node-url-parse (1.5.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.5.1 (Closes: #985110, CVE-2021-27515)
+
+ -- Yadd <yadd@debian.org>  Sat, 13 Mar 2021 08:55:57 +0100
+
+node-url-parse (1.4.7+repack-2) unstable; urgency=medium
+
+  * Team upload
+  * Set upstream metadata fields: Security-Contact.
+  * Declare compliance with policy 4.5.1
+  * Add ctype=nodejs to component(s)
+  * Fix webpack config
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 23 Dec 2020 17:41:24 +0100
+
+node-url-parse (1.4.7+repack-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs
+  * Modernize debian/watch
+  * replace embedded test modules by dependency to new node-assume
+    (Closes: #973962)
+  * Embed @types/url-parse and repack
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 08 Nov 2020 13:22:15 +0100
+
+node-url-parse (1.4.7-3) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 04 Aug 2019 18:22:13 +0000
+
+node-url-parse (1.4.7-2) experimental; urgency=medium
+
+  * Team upload
+  * Drop unnecessary build dependency on dh-buildinfo
+  * Bump standards version to 4.4.0
+  * Build with webpack 4
+  * Switch to pkg-js-tools auto install (remove debian/install)
+  * Add mocha as build dependency
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 30 Jul 2019 15:36:19 +0000
+
+node-url-parse (1.4.7-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.4.7
+  * Add SECURITY.md in docs
+  * Remove CVE-2018-3774 patch
+  * Bump debhelper compatibility level to 12
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 08 Jul 2019 07:22:42 +0200
+
+node-url-parse (1.2.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.3.0
+  * Add patch to fix bad URL parsing (Closes: #906058, CVE-2018-3774)
+  * Enable upstream tests using pkg-js-tools. This adds node-deep-eql,
+    node-object-inspect and node-pathval in build dependencies
+  * Fix VCS fields
+  * Fix debian/copyright format URL
+  * Fix description (trailing whitespaces)
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 16 Apr 2019 10:18:36 +0200
+
+node-url-parse (1.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump standards, update section and priority
+  * Use github tarballs
+  * Use webpack instead of browserify
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 02 Jan 2018 21:25:10 +0530
+
+node-url-parse (1.0.5-2) unstable; urgency=medium
+
+  * debian/install: install more files into package
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sun, 14 Feb 2016 16:07:46 +0100
+
+node-url-parse (1.0.5-1) unstable; urgency=medium
+
+  * new upstream version
+  * debian/control: use correct version numbers for dependencies
+                    (Closes: #801143)
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sat, 06 Feb 2016 18:07:46 +0100
+
+node-url-parse (1.0.2-1) unstable; urgency=low
 
   * Initial release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Thorsten Alteholz <debian@alteholz.de>  Wed, 02 Sep 2015 18:07:46 +0200

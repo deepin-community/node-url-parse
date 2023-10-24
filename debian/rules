@@ -1,4 +1,16 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	webpack --config debian/webpack.config.js --output-library=URLParse \
+	--entry index.js --output-path ./dist --output-filename url-parse.js \
+	--mode development
+	webpack --config debian/webpack.config.js --output-library=URLParse \
+	--entry index.js --output-path ./dist --output-filename url-parse.min.js \
+	--mode production
